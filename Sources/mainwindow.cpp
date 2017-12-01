@@ -23,7 +23,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     db = QSqlDatabase::addDatabase("QSQLITE");
     //db.setDatabaseName("..\\LEXIKO.sqlite");
-    db.setDatabaseName("C:\\Users\\nlk\\Desktop\\LEXIKO.sqlite");
+    //db.setDatabaseName("C:\\Users\\nlk\\Desktop\\LEXIKO.sqlite");
+    db.setDatabaseName("LEXIKO.sqlite");
 
     bool db_ok = db.open();
     if (!db_ok) {
